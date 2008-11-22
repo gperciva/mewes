@@ -1,0 +1,14 @@
+quarter00
+eighth01
+sixteen01
+sixteen02
+rest01
+long01
+
+triplet01
+triplet02
+triplet03
+rest02
+long02
+
+
