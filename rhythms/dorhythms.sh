@@ -10,6 +10,6 @@ ozmake
 for lvl in $BEGINNER $MODERATE
 do
   mkdir -p "$TEMPDIR/$lvl"
-  ./main.exe -l $lvl
+  ./rhythms.exe -l $lvl
 done
 
