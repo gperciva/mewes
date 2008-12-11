@@ -1,0 +1,15 @@
+GETTING STARTED
+
+1.  Install Mozart/Oz.
+http://www.mozart-oz.org/
+
+2.  Install Strasheela.
+http://strasheela.sourceforge.net/strasheela/doc/index.html
+
+3.  cd rhythms     ||     cd intonation
+
+4.  ./dorhythms.sh    ||    ./dointonation.sh
+
+Alternatively, you could run "ozmake" and the investigate the
+(few) command-line options.
+
