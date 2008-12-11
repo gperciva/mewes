@@ -17,10 +17,10 @@
 */
 
 makefile(
-	bin: ['main.exe']
-	lib: [ 'main.oz' ]
-	uri: 'x-ozlib://gperciva/rhythms'
-	mogul: 'mogul:/gperciva/rhythms'
+	bin: ['intonation.exe']
+	lib: [ 'intonation.ozf' ]
+	uri: 'x-ozlib://gperciva/intonation'
+	mogul: 'mogul:/gperciva/intonation'
  	author: 'Graham Perival'
 )
 

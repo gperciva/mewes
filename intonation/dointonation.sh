@@ -11,7 +11,7 @@ ozmake
 for lvl in $NOVICE $BEGINNER $SHIFT
 do
   mkdir -p "$TEMPDIR/$lvl"
-  ./main.exe -l $lvl
+  ./intonation.exe -l $lvl
 done
 
 for f in $TEMPDIR/minor2/*.ly
