@@ -17,8 +17,8 @@
 */
 
 makefile(
-	bin: ['main.exe']
-	lib: [ 'main.oz' ]
+	bin: ['rhythms.exe']
+	lib: [ 'rhythms.ozf' ]
 	uri: 'x-ozlib://gperciva/rhythms'
 	mogul: 'mogul:/gperciva/rhythms'
  	author: 'Graham Perival'
