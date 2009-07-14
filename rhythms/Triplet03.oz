@@ -89,7 +89,7 @@ define
    proc {HasAdjacentTwoThree Durs}
       {FD.sum
        {Pattern.mapNeighbours
-	{LUtils.everyNth Durs BeatDivisions}
+	{LUtils.everyNth Durs BeatDivisions 0}
 	2
 	fun {$ X}
 	   X1 = X.1
