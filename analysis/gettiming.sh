@@ -1,2 +1,2 @@
-lilypond -dbackend=null getdurs.ly > timing.txt
+lilypond -dbackend=null testdurs.ly > timing.txt
 
