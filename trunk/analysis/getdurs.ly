@@ -34,12 +34,14 @@ getDurations =
   (durations m))
 
 
-music = \relative c' { c4 d e8 f g4 \time 3/4 e4 c2 }
+music = \relative c' { c4 d e8 f g4 | \time 3/4 e4 c2 }
 
 \score {
-  \new Staff {
-%     \displayMusic \music
-     \getDurations \music
+  \getDurations
+    \new Staff {
+    \override Staff.BarLine #'stencil = #(lambda (grob)
+         (display "\n"))
+    \music
   }
   \layout { }
 }
