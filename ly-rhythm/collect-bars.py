@@ -34,14 +34,13 @@ def timeSignature(nextTimeSigTop, nextTimeSigBot):
 	global timeBar, position
 	if (PRINT_BARS):
 		print "time signature:", timeSigTop, timeSigBot
-	position += timeBar
 	timeBar = (UNIT / timeSigBot) * timeSigTop
-	position -= timeBar
+	position = 0
 
 def barLine():
 	global bar_string, position, measure_number
 	if (PRINT_BARS):
-		print "m"+str(measure_number)+":", bar_string
+		print "m"+str(measure_number)+":", "'"+bar_string+"'"
 	position -= timeBar 
 	measure_number += 1
 	try:
@@ -86,9 +85,9 @@ def duration(duration):
 		barLine()
 		print duration, position, bar_string
 		sys.exit(1)
-	if (position == timeBar):
+	elif (position == timeBar):
 		barLine()
-	if (position == 0):
+	elif (position == 0):
 		barLine()
 	else:
 		bar_string += ' '
@@ -112,5 +111,6 @@ if (position > 0):
 for bar in iter(bar_types):
 	print str(bar_types[bar]) + ':\t', bar
 
-
+print ''
+print str(measure_number-1) + ': total bars (not counting upbeats)'
 
