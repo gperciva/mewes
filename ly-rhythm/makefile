@@ -4,4 +4,5 @@ all:
 	python collect-bars.py timing.txt
 
 clean:
-	rm timing.txt
+	rm -f timing.txt
+
