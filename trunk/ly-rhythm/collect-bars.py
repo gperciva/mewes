@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import sys
 
-PRINT_BARS = 1
+PRINT_BARS = 0
 
 try:
 	timing_file = sys.argv[1]
@@ -93,7 +93,6 @@ def duration(duration):
 		bar_string += ' '
 
 for line in timings:
-	print line
 	splitline = line.split()
 	type = splitline[0]
 	remainder = splitline[1:]
