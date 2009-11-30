@@ -108,8 +108,12 @@ for line in timings:
 if (position != 0):
 	barLine()
 
+measures_total = measure_number - 1
+
+
 for bar in iter(bar_types):
-	print str(bar_types[bar]) + ':\t', bar
+	percentage = int(100.0 * bar_types[bar] / measures_total)
+	print str(bar_types[bar]) + '\t'+str(percentage)+' %\t', bar
 
 print ''
 print str(measure_number-1) + ': total bars (not counting upbeats)'
